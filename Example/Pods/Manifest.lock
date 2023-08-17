@@ -1,0 +1,16 @@
+PODS:
+  - ZQRouter (0.1.0)
+
+DEPENDENCIES:
+  - ZQRouter (from `../`)
+
+EXTERNAL SOURCES:
+  ZQRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZQRouter: 0f1235c7868a02101cb45c6093bbcb43667809a6
+
+PODFILE CHECKSUM: 3dca21c7e2a73e9ccb3b910bc68d4acd6d99ae7e
+
+COCOAPODS: 1.11.3
