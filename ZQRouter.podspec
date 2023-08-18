@@ -30,13 +30,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'ZQRouter/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ZQRouter' => ['ZQRouter/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'ZQRouter/Router/**/*'
+  s.dependency 'ZQFoundation/Categories'
 end
