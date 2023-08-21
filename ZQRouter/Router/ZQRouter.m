@@ -366,4 +366,13 @@ typedef NS_ENUM(NSUInteger, ZQRouterControlerEnterMode) {
 }
 
 
++ (void)registerSwiftServiceMap:(NSString *)serviceName {
+    if (serviceName.length == 0) return;
+    NSArray<NSString *> *splitStr = [serviceName componentsSeparatedByString:@"_"];
+    NSString *modName = splitStr.firstObject;
+    NSString *targetName = splitStr.lastObject;
+    [[ZQRouter sharedInstance].swiftModuleMap setValue:modName forKey:targetName];
+}
+
+
 @end

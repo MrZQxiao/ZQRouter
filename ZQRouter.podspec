@@ -30,6 +30,18 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'ZQRouter/Router/**/*'
-  s.dependency 'ZQFoundation/Categories'
+  s.source_files = 'ZQRouter/**/*'
+
+
+  s.subspec 'Router' do |ss|
+      ss.source_files = 'ZQRouter/ZQRouter/**/*'
+      ss.dependency 'ZQFoundation/Categories'
+  end
+
+  s.subspec 'Module' do |ss|
+      ss.source_files = 'ZQRouter/Module/**/*'
+      ss.dependency 'ZQRouter/Router'
+  end
+
+
 end
